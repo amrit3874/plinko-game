@@ -1,7 +1,7 @@
-var Engine = Matter.Engine,
-  World = Matter.World,
-  Events = Matter.Events,
-  Bodies = Matter.Bodies;
+const Engine = Matter.Engine;
+const   World = Matter.World;
+const   Events = Matter.Events;
+ const  Bodies = Matter.Bodies;
  
 var particles = [];
 var plinkos = [];
@@ -69,7 +69,7 @@ function draw() {
 
   //create the particles using frameCount
   if(frameCount%60===0){
-    particles.push(new particles(random(0,800),0));
+    particles.push(new Particle(random(0,800),0,10));
     score++;
   
     }
